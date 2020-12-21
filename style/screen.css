@@ -3,17 +3,16 @@
 \*------------------------------------*/
 
 @font-face {
-  font-family: 'SNES';
+  font-family: "SNES";
   font-weight: 400;
-  src: url('../fonts/SNESItalic.ttf');
-  }
+  src: url("../fonts/SNESItalic.ttf");
+}
 
 /*------------------------------------*\
 #Variables
 \*------------------------------------*/
 
 :root {
-
   /* colors */
   --global-color-neutral-xx-light: #f9f9f9;
   --global-color-neutral-x-light: #ebebeb;
@@ -24,11 +23,14 @@
   --global-color-white: #ffffff;
   --global-color-alpha: #e70009;
 
+  /* box-shadow */
 
-/* box-shadow */
+  --global-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
 
---global-box-shadow: 0 4px 5px rgba(0, 0 , 0, 0.2);
 
+
+
+  --global-header-height: 7rem;
 }
 
 /* CSS variables here */
@@ -60,6 +62,9 @@ html {
   box-sizing: inherit;
 }
 
+body, html {
+  margin: 0;
+}
 /*
 * Remove text-shadow in selection highlight:
 * https://twitter.com/miketaylr/status/12228805301
@@ -129,7 +134,7 @@ h5,
 h6 {
   font-size: 20px;
   line-height: 24px;
-  margin: 0 0 .3rem;
+  margin: 0 0 0.3rem;
 }
 
 p,
@@ -453,14 +458,16 @@ a:focus {
 */
 
 .c-main {
-display: flex;
-flex-wrap: wrap;
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: calc(var(--global-header-height) + 2rem);
 }
+
+
 
 .c-amiibo {
   background-color: var(--global-color-neutral-xx-light);
-
 
   width: 20rem;
 
@@ -485,14 +492,57 @@ flex-wrap: wrap;
 
 .c-amiibo--info {
   text-align: center;
-  padding: .5rem;
-  background-color: var(--global-color-alpha); 
-  letter-spacing: 1.5px;
+  padding: 0.5rem;
+  background-color: var(--global-color-alpha);
+  letter-spacing: 3.5px;
   color: var(--global-color-neutral-xx-light);
 }
 
 
+.c-header {
+  background-color: var(--global-color-alpha);
+  margin-bottom: 2rem;
+  height: var(--global-header-height);
 
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+
+}
+
+.c-search {
+  border-style: solid;
+  border-color: var(--global-color-white);
+  background-color: transparent;
+  border-radius: 1rem;
+  font-family: inherit;
+  letter-spacing: 2px;
+  font-size: 24px;
+  color: var(--global-color-white);
+  width: 25rem;
+  height: 3rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 0.5rem;
+  margin-right: 2.5rem;
+  margin-left: 1rem;
+}
+
+.c-search::placeholder {
+  color: var(--global-color-white);
+  
+}
+
+.c-logo {
+  max-width: 18rem;
+  max-height: 8rem;
+  margin-left: 2.5rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 1rem;
+  
+}
 
 /*
     Component: Logo

@@ -32,8 +32,6 @@ const showAmiibos = (data) => {
 
 };
 
-
-
 let getAPI = async () => {
     const ENDPOINT = `https://www.amiiboapi.com/api/amiibo`;
     
@@ -47,8 +45,6 @@ let getAPI = async () => {
     showAmiibos(data);
     
 };
-
-
 
     document.addEventListener('DOMContentLoaded', function() {
         getAPI();
