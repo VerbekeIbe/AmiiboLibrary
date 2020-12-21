@@ -2,11 +2,19 @@
 #FONTS
 \*------------------------------------*/
 
+@font-face {
+  font-family: 'SNES';
+  font-weight: 400;
+  src: url('../fonts/SNESItalic.ttf');
+  }
+
 /*------------------------------------*\
 #Variables
 \*------------------------------------*/
 
 :root {
+
+  /* colors */
   --global-color-neutral-xx-light: #f9f9f9;
   --global-color-neutral-x-light: #ebebeb;
   --global-color-neutral: #b3b3b3;
@@ -15,6 +23,12 @@
 
   --global-color-white: #ffffff;
   --global-color-alpha: #e70009;
+
+
+/* box-shadow */
+
+--global-box-shadow: 0 4px 5px rgba(0, 0 , 0, 0.2);
+
 }
 
 /* CSS variables here */
@@ -32,12 +46,12 @@
 html {
   font-size: 16px;
   line-height: 1.5;
-  font-family: Helvetica, arial, sans-serif;
-  color: grey;
+  font-family: "SNES", Helvetica, arial, sans-serif;
+  color: var(--global-color-neutral-xx-dark);
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: white;
+  background-color: var(--global-color-neutral-x-light);
 }
 
 *,
@@ -432,6 +446,30 @@ a:focus {
 /*------------------------------------*\
 #COMPONENTS
 \*------------------------------------*/
+/*
+    Component: Amiibo
+    ---
+    Website main Amiibo Component
+*/
+
+.c-amiibo {
+  background-color: var(--global-color-neutral-xx-light);
+
+
+  width: 15rem;
+  height: 25rem;
+
+  box-shadow: var(--global-box-shadow);
+}
+
+.c-amiibo img {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 1rem;
+}
+
+
+
 
 /*
     Component: Logo
