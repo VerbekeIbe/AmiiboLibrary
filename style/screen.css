@@ -23,6 +23,8 @@
   --global-color-white: #ffffff;
   --global-color-alpha: #e70009;
 
+  --global-color-alpha--hover: rgb(255, 0, 51);
+
   /* box-shadow */
 
   --global-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
@@ -479,7 +481,9 @@ a:focus {
 
 .c-amiibo:hover, .c-amiibo:focus {
   box-shadow: var(--global-box-shadow--hover);
-
+}
+.c-amiibo:hover .c-amiibo--info, .c-amiibo:focus {
+  background-color: var(--global-color-alpha--hover);
 }
 
 .c-amiibo img {
@@ -509,6 +513,7 @@ a:focus {
   background-color: var(--global-color-alpha);
   margin-bottom: 2rem;
   height: var(--global-header-height);
+  box-shadow: var(--global-box-shadow);
 
   display: flex;
   justify-content: space-between;
@@ -533,16 +538,39 @@ a:focus {
   padding-left: 0.5rem;
   margin-right: 2.5rem;
   margin-left: 1rem;
+
 }
 
 .c-search::placeholder {
   color: var(--global-color-white);
 }
 
-.c-search:active,.c-search:focus{
+.c-search:hover {
   outline:none;
+  background-color:var(--global-color-alpha--hover);
   box-shadow: var(--global-input-shadow);
 }
+
+.c-search:active,.c-search:focus{
+  outline:none;
+  background-color: var(--global-color-alpha--hover);
+  box-shadow: var(--global-input-shadow);
+
+}
+
+@media (max-width: 576px) {
+.c-search {
+  display:none;
+}
+.c-header{
+  display: flex;
+  justify-content: center;
+}
+
+}
+
+
+
 
 .c-logo {
   max-width: 18rem;
