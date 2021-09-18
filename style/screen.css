@@ -31,8 +31,6 @@
   --global-input-shadow: 0 4px 5px rgba(109, 109, 109, 0.3);
   --global-box-shadow--hover: 0 4px 5px rgba(0, 0, 0, 0.4);
 
-
-
   --global-header-height: 7rem;
 }
 
@@ -65,7 +63,8 @@ html {
   box-sizing: inherit;
 }
 
-body, html {
+body,
+html {
   margin: 0;
 }
 /*
@@ -467,8 +466,6 @@ a:focus {
   padding-top: calc(var(--global-header-height) + 2rem);
 }
 
-
-
 .c-amiibo {
   background-color: var(--global-color-neutral-xx-light);
 
@@ -479,10 +476,12 @@ a:focus {
   box-shadow: var(--global-box-shadow);
 }
 
-.c-amiibo:hover, .c-amiibo:focus {
+.c-amiibo:hover,
+.c-amiibo:focus {
   box-shadow: var(--global-box-shadow--hover);
 }
-.c-amiibo:hover .c-amiibo--info, .c-amiibo:focus {
+.c-amiibo:hover .c-amiibo--info,
+.c-amiibo:focus {
   background-color: var(--global-color-alpha--hover);
 }
 
@@ -508,7 +507,6 @@ a:focus {
   color: var(--global-color-neutral-xx-light);
 }
 
-
 .c-header {
   background-color: var(--global-color-alpha);
   margin-bottom: 2rem;
@@ -519,7 +517,6 @@ a:focus {
   justify-content: space-between;
   position: fixed;
   width: 100%;
-
 }
 
 .c-search {
@@ -538,7 +535,6 @@ a:focus {
   padding-left: 0.5rem;
   margin-right: 2.5rem;
   margin-left: 1rem;
-
 }
 
 .c-search::placeholder {
@@ -546,31 +542,27 @@ a:focus {
 }
 
 .c-search:hover {
-  outline:none;
-  background-color:var(--global-color-alpha--hover);
+  outline: none;
+  background-color: var(--global-color-alpha--hover);
   box-shadow: var(--global-input-shadow);
 }
 
-.c-search:active,.c-search:focus{
-  outline:none;
+.c-search:active,
+.c-search:focus {
+  outline: none;
   background-color: var(--global-color-alpha--hover);
   box-shadow: var(--global-input-shadow);
-
 }
 
 @media (max-width: 576px) {
-.c-search {
-  display:none;
+  .c-search {
+    display: none;
+  }
+  .c-header {
+    display: flex;
+    justify-content: center;
+  }
 }
-.c-header{
-  display: flex;
-  justify-content: center;
-}
-
-}
-
-
-
 
 .c-logo {
   max-width: 18rem;
@@ -579,7 +571,6 @@ a:focus {
   margin-top: auto;
   margin-bottom: auto;
   margin-right: 1rem;
-  
 }
 
 /*
