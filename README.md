@@ -4,5 +4,5 @@ This was a small personal project inspired by Polish developer Florin Pop, I wan
 If I ever find the time I might add a detail page for every Amiibo figure, and maybe get the search bar to actually work. But for now I’m pretty satisfied with this proof of concept.
 Make sure to visit the Wiki Page to learn more about the techniques used in this project.
 
-CSS Variables, Dynamic HTML, Query Selection in JavaScript
+*CSS Variables, Dynamic HTML, Query Selection in JavaScript*
 
