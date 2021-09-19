@@ -7,7 +7,7 @@ If I ever find the time I might add a detail page for every Amiibo figure, and m
 
 Make sure to visit the [Wiki Page](https://github.com/VerbekeIbe/AmiiboLibrary/wiki) to learn more about the techniques used in this project.
 
-![App screenshot](https://github.com/VerbekeIbe/AmiiboLibrary/blob/master/documentation/Show%20Amiibos.png)
+![App screenshot](https://github.com/VerbekeIbe/AmiiboLibrary/blob/master/documentation/App.png)
 
 *CSS Variables, Dynamic HTML, Query Selection in JavaScript*
 
